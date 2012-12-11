@@ -66,3 +66,10 @@ rm -rf %{buildroot}
 
 
 
+
+
+%changelog
+* Tue Jul 12 2011 Götz Waschk <waschk@mandriva.org> 0.8.5-1mdv2011
++ Revision: 689678
+- import vagalume
+
