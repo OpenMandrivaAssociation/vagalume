@@ -1,6 +1,6 @@
 %define name vagalume
 %define version 0.8.5
-%define release %mkrel 1
+%define release 2
 
 Summary: Client for Last.fm and compatible music streaming services
 Name: %{name}
