@@ -1,2 +1,4 @@
+removed_sources:
+  vagalume-0.8.5.tar.gz: ef0c3bc4e62d5a8195ec7ac4f53f17afc00e8cc2
 sources:
-  "vagalume-0.8.5.tar.gz": ef0c3bc4e62d5a8195ec7ac4f53f17afc00e8cc2
+  vagalume-0.8.6.tar.gz: 19500a254e706dd9d5b9f25f197f6b40cc2e9b51

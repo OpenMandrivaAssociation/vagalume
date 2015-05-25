@@ -1,21 +1,15 @@
-%define name vagalume
-%define version 0.8.5
-%define release 2
-
 Summary: Client for Last.fm and compatible music streaming services
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name: vagalume
+Version: 0.8.6
+Release: 1
 Source0: http://vagalume.igalia.com/files/source/%{name}-%{version}.tar.gz
 License: GPLv3
 Group: Sound
 Url: http://vagalume.igalia.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: libgstreamer-plugins-base-devel
 BuildRequires: libxml2-devel
-BuildRequires: gtk+2-devel
-#gw or:
-#BuildRequires: gtk+2-devel
+BuildRequires: pkgconfig(gtk+-3.0)
+BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires: curl-devel
 BuildRequires: dbus-glib-devel
 BuildRequires: libnotify-devel >= 0.4.1
@@ -45,15 +39,10 @@ Its main features are:
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 %find_lang %name
 
-%clean
-rm -rf %{buildroot}
-
 %files -f %name.lang
-%defattr(-,root,root)
 %doc README AUTHORS THANKS TODO TRANSLATORS
 %_bindir/%name
 %_bindir/vagalumectl
@@ -63,13 +52,3 @@ rm -rf %{buildroot}
 %_datadir/%name
 %_datadir/icons/hicolor/*/apps/%name.*
 %_datadir/dbus-1/services/%name.service
-
-
-
-
-
-%changelog
-* Tue Jul 12 2011 Götz Waschk <waschk@mandriva.org> 0.8.5-1mdv2011
-+ Revision: 689678
-- import vagalume
-
