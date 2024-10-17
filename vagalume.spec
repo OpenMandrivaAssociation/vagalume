@@ -5,7 +5,7 @@ Release: 1
 Source0: http://vagalume.igalia.com/files/source/%{name}-%{version}.tar.gz
 License: GPLv3
 Group: Sound
-Url: http://vagalume.igalia.com/
+Url: https://vagalume.igalia.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libxml2-devel
 BuildRequires: pkgconfig(gtk+-3.0)
