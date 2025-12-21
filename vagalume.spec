@@ -7,6 +7,11 @@ License: GPLv3
 Group: Sound
 Url: https://vagalume.igalia.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: libxml2-devel
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
