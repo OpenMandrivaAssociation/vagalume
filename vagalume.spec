@@ -1,7 +1,7 @@
 Summary: Client for Last.fm and compatible music streaming services
 Name: vagalume
 Version: 0.8.6
-Release: 1
+Release: 2
 Source0: http://vagalume.igalia.com/files/source/%{name}-%{version}.tar.gz
 License: GPLv3
 Group: Sound
