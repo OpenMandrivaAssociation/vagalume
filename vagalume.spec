@@ -41,10 +41,12 @@ Its main features are:
 
 %build
 %configure2_5x
-%make
+# The generated libtool script is a no-op: slibtool's ltmain.sh stub
+# combined with GNU libtool.m4. Link with slibtool.
+%make LIBTOOL=slibtool-shared
 
 %install
-%makeinstall_std
+%makeinstall_std LIBTOOL=slibtool-shared
 %find_lang %name
 
 %files -f %name.lang
