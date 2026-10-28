@@ -12,7 +12,7 @@ BuildRequires:	automake
 BuildRequires:	libtool-base
 BuildRequires:	slibtool
 BuildRequires:	make
-BuildRequires: libxml2-devel
+BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires: curl-devel
